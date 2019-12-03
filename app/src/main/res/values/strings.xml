@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">PokemonApp</string>
+    <string name="app_name">LayoutEx</string>
+    <string name="text_header_main_screen">Good Morning\nShishir</string>
+    <string name="textSearchHint">Search</string>
+    <string name="text_meditation">Meditation</string>
+    <string name="text_screen_detail">3-10 MIN Course</string>
+    <string name="text_screen_detail_2">Live happier and healthier by learning the\nfundamentals of meditation and\nmindfulness</string>
 </resources>

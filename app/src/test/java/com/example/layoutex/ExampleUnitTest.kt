@@ -1,4 +1,4 @@
-package com.example.pokemonapp
+package com.example.layoutex
 
 import org.junit.Test
 

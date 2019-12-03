@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7b8f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/viewHeader"
+                android:layout_width="312dp"
+                android:layout_height="246dp"
+                android:layout_marginTop="42dp"
+                android:src="@drawable/view_header_ex2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageYoga"
+                android:layout_width="180dp"
+                android:layout_height="251dp"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/image_yoga"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="76dp"
+                android:text="@string/text_meditation"
+                android:textColor="#222b45"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="127dp"
+                android:text="@string/text_screen_detail"
+                android:textColor="#38415c"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTextDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="164dp"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/text_screen_detail_2"
+                android:textColor="#132045"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/searchContainer"
+                android:layout_width="183dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/background_search_container"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconSearch"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/icon_search"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textSearchHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/textSearchHint"
+                    app:layout_constraintLeft_toRightOf="@id/iconSearch"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="73dp"
+                android:background="#f8f8f8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/searchContainer"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemSession01"
+                android:layout_width="162dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemSession02"
+                app:layout_constraintTop_toBottomOf="@id/searchContainer">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconPlaySS1"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/icon_play_ss1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textSession1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="29dp"
+                        android:text="Session 01"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/iconPlaySS1"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemSession02"
+                android:layout_width="162dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintLeft_toRightOf="@id/itemSession01"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/searchContainer">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconPlaySS2"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/icon_play"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textSession2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="29dp"
+                        android:text="Session 02"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/iconPlaySS2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemSession03"
+                android:layout_width="162dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemSession04"
+                app:layout_constraintTop_toBottomOf="@id/itemSession01">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconPlaySS3"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/icon_play"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textSession3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="29dp"
+                        android:text="Session 03"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/iconPlaySS3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemSession04"
+                android:layout_width="162dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintLeft_toRightOf="@id/itemSession03"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemSession02">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconPlaySS4"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/icon_play"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textSession4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="29dp"
+                        android:text="Session 04"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/iconPlaySS4"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemSession05"
+                android:layout_width="162dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/itemSession06"
+                app:layout_constraintTop_toBottomOf="@id/itemSession03">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconPlaySS5"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/icon_play"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textSession5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="29dp"
+                        android:text="Session 05"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/iconPlaySS5"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemSession06"
+                android:layout_width="162dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintLeft_toRightOf="@id/itemSession05"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemSession04">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iconPlaySS6"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/icon_play"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textSession6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="29dp"
+                        android:text="Session 06"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/iconPlaySS6"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textSessionMeditation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="29dp"
+                android:text="Meditation"
+                android:textColor="#38415c"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemSession05" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemMeditation"
+                android:layout_width="0dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textSessionMeditation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageYogaMeditation"
+                        android:layout_width="72dp"
+                        android:layout_height="68dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/icon_meditation"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageLock"
+                        android:layout_width="17dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="26dp"
+                        android:layout_marginRight="26dp"
+                        android:src="@drawable/icon_lock"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textHeaderItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="19dp"
+                        android:text="Basics 2"
+                        android:textColor="#393c50"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/imageYogaMeditation"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textDetailItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="13dp"
+                        android:lineHeight="19sp"
+                        android:text="Start your deepen you practice"
+                        android:textColor="#393c50"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/imageYogaMeditation"
+                        app:layout_constraintTop_toBottomOf="@id/textHeaderItem" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottomNavigationBar"
+        layout="@layout/layout_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

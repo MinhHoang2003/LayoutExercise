@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iconMenu"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginRight="27dp"
+                android:src="@drawable/menu"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/viewHeader"
+                android:layout_width="312dp"
+                android:layout_height="246dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/background_header"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="97dp"
+                android:letterSpacing="0.66sp"
+                android:text="@string/text_header_main_screen"
+                android:textColor="#222b45"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/searchContainer"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/background_search_container"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/icon_search"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textSearchHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="62dp"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/textSearchHint"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/viewHaftCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="236dp"
+                android:background="@drawable/background_haft_circle"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewBackground"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="71dp"
+                android:background="#f8f8f8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewHeader" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDiet"
+                android:layout_width="152dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:cardElevation="8dp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/cardKegel"
+                app:layout_constraintTop_toBottomOf="@id/viewHeader">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageDietRecommend"
+                        android:layout_width="130dp"
+                        android:layout_height="71dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="47dp"
+                        android:src="@drawable/undraw_hamburger_8_ge_6"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textDietRecommend"
+                        style="@style/TextStyle29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:text="Diet\nRecommendation"
+                        android:textAlignment="center"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageDietRecommend" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMeditation"
+                android:layout_width="152dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="27dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/cardYoga"
+                app:layout_constraintTop_toBottomOf="@id/cardDiet">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageMeditation"
+                        android:layout_width="113dp"
+                        android:layout_height="116dp"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/icon_meditation"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textMeditation"
+                        style="@style/TextStyle29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:text="Meditation"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageMeditation" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardKegel"
+                android:layout_width="152dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="27dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:cardElevation="8dp"
+                app:layout_constraintLeft_toRightOf="@id/cardDiet"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewHeader">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageKegel"
+                        android:layout_width="104dp"
+                        android:layout_height="72dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="45dp"
+                        android:src="@drawable/icon_kegel_ex"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textKegel"
+                        style="@style/TextStyle29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="42dp"
+                        android:text="Kegel Exercises"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageKegel" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardYoga"
+                android:layout_width="152dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="27dp"
+                android:background="@color/white"
+                app:cardCornerRadius="13dp"
+                app:cardElevation="8dp"
+                app:layout_constraintLeft_toRightOf="@id/cardMeditation"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardKegel">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageYoga"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="53dp"
+                        android:src="@drawable/icon_yoga"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textYoga"
+                        style="@style/TextStyle29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Yoga"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageYoga" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottomNavigationBar"
+        layout="@layout/layout_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

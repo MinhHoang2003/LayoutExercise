@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/white"
+        android:elevation="13dp"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconExercise"
+                android:layout_width="41dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/icon_exercise"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textBottomExercises"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:letterSpacing="0.01"
+                android:text="All Exercises"
+                android:textColor="#e68342"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/iconExercise"
+                app:layout_constraintRight_toRightOf="@id/iconExercise"
+                app:layout_constraintTop_toBottomOf="@id/iconExercise" />
+
+            <ImageView
+                android:id="@+id/iconToday"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/icon_calendar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textBottomToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:letterSpacing="0.01"
+                android:text="Today"
+                android:textColor="#33395f"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/iconToday"
+                app:layout_constraintRight_toRightOf="@id/iconToday"
+                app:layout_constraintTop_toBottomOf="@id/iconToday" />
+
+            <ImageView
+                android:id="@+id/iconSetting"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="12sp"
+                android:layout_marginRight="54dp"
+                android:src="@drawable/icon_calendar"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textBottomSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:letterSpacing="0.01"
+                android:text="Setting"
+                android:textColor="#33395f"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@id/iconSetting"
+                app:layout_constraintRight_toRightOf="@id/iconSetting"
+                app:layout_constraintTop_toBottomOf="@id/iconSetting" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
